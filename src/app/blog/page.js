@@ -1,24 +1,41 @@
-import { signIn } from "@/app/api/auth/[...nextauth]/route"
-//what is the @ sign for?
+import AuthCheck from "@/components/AuthCheck"
+import fs from "fs"
+import path from "path"
+import matter from "gray-matter"
+import Link from "next/link"
 
-export default function Login() {
+export default function Blog() {
+  const postsDirectory = path.join(process.cwd(), "src/app/blog/posts")
+  const fileNames = fs.readdirSync(postsDirectory)
+
+  const posts = filenames.map((filename) => {
+    const filePath = path.join(postsDirectory, filename)
+    const fileContents = fs.readFileSync(filePath, "utf8")
+    const { data } = matter(fileContents)
+    return {
+      slug: filename.replace(".md", ""),
+      title: data.title || "Untitled",
+      excerpt: data.excerpt || "",
+    }
+  })
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-96">
-        <h1 className="text-2xl font-bold mb-6 text-center">
-          Who is the prettiest girl in the whole wide world?
-        </h1>
-        <button
-          onClick={() => signIn("credentials", { password: "" })}
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-        >
-          Enter
-        </button>
+    <AuthCheck>
+      <div className="max-w-4xl mx-auto py-12 px-4">
+        <h1 className="text-4xl font-bold mb-8">This is my H1</h1>
+        <div className="grid gap-8">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="block p-6 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
+            >
+              <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+              <p className="text-gray-600">{post.excerpt}</p>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </AuthCheck>
   )
 }
-
-// change the button styling to match the mailchimp styling
-// workshop the text to be more clear and communicative for users
-// make sure the button works on click and submit (enter key)
