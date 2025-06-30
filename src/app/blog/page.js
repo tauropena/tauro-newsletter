@@ -39,3 +39,13 @@ export default function Blog() {
     </AuthCheck>
   )
 }
+
+// This code is a Next.js page that displays a list of blog posts.
+// It uses the `fs` module to read markdown files from a specific directory,
+// extracts metadata using `gray-matter`, and renders the posts as links.
+// The `AuthCheck` component ensures that the user is authenticated before accessing the blog.
+// The posts are displayed in a grid layout with titles and excerpts.
+// The `Link` component from Next.js is used to navigate to individual blog post pages.
+// The page is styled with Tailwind CSS classes for a clean and responsive design.
+
+// I WILL NEED TO WORK ON THE STYLING OF THIS PAGE
