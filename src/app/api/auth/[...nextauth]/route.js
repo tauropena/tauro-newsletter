@@ -17,6 +17,7 @@ export const authOptions = {
           throw new Error("WRONG")
         }
         return { id: "1", name: "welcome reader :-)" }
+        // where does this message show up if at all?
       },
     }),
   ],

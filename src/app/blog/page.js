@@ -8,7 +8,7 @@ export default function Blog() {
   const postsDirectory = path.join(process.cwd(), "src/app/blog/posts")
   const fileNames = fs.readdirSync(postsDirectory)
 
-  const posts = filenames.map((filename) => {
+  const posts = fileNames.map((filename) => {
     const filePath = path.join(postsDirectory, filename)
     const fileContents = fs.readFileSync(filePath, "utf8")
     const { data } = matter(fileContents)
