@@ -47,5 +47,6 @@ export default function Blog() {
 // The posts are displayed in a grid layout with titles and excerpts.
 // The `Link` component from Next.js is used to navigate to individual blog post pages.
 // The page is styled with Tailwind CSS classes for a clean and responsive design.
+// make sure you can't bypass the password by going to the blog page directly by typing in /blog
 
 // I WILL NEED TO WORK ON THE STYLING OF THIS PAGE

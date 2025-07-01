@@ -23,15 +23,16 @@ export default function Login() {
       const result = await signIn("credentials", {
         password,
         redirect: false,
+        callbackUrl: "/blog",
       })
 
       if (result?.error) {
-        setError("Incorrect password. Please try again.")
-      } else {
-        router.push("/blog")
+        setError(result.error)
+      } else if (result?.url) {
+        router.push(result.url)
       }
     } catch (err) {
-      setError("An unexpected error occurred. Please try again.")
+      setError("an unexpected error occurred. please try again.")
     } finally {
       setLoading(false)
     }
