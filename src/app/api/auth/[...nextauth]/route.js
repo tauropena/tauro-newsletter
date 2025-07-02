@@ -9,15 +9,22 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        if (!credentials?.password) {
-          throw new Error("password is required.")
-        }
+        try {
+          if (!credentials?.password) {
+            throw new Error("password is required.")
+          }
 
-        if (credentials.password !== process.env.BLOG_PASSWORD) {
-          throw new Error("WRONG -- password is case sensitive")
+          if (credentials.password !== process.env.BLOG_PASSWORD) {
+            throw new Error("WRONG -- password is case sensitive")
+          }
+          return {
+            id: "1",
+            name: "welcome reader :-)",
+          } // where does this message show up if at all?
+        } catch (error) {
+          console.error("authentication error:", error)
+          return null
         }
-        return { id: "1", name: "welcome reader :-)" }
-        // where does this message show up if at all?
       },
     }),
   ],
@@ -29,16 +36,17 @@ export const authOptions = {
       return token
     },
     async session({ session, token }) {
-      session.user = token.user
+      session.user = token.user || {}
       return session
     },
     async redirect({ url, baseUrl }) {
-      return url.startsWith(baseUrl) ? `${baseUrl}/home` : url
+      if (url.startsWith(baseUrl)) return url
+      return baseUrl + "/home"
     },
   },
   pages: {
     signIn: "/login",
-    newUser: "/login",
+    newUser: "/home",
     error: "/login",
   },
   secret: process.env.NEXTAUTH_SECRET,
