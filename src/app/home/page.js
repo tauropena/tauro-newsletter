@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import AuthCheck from "@/components/AuthCheck"
 
+// HomePage is the main page of the application that displays a grid of links to different sections.
 export default function HomePage() {
   return (
     <AuthCheck>
@@ -29,6 +30,8 @@ export default function HomePage() {
   )
 }
 
+// GridSquare is a component that renders a square with a title and a link to a page.
+// I could put this in a separate file, but I think it's fine to keep it here for now.
 function GridSquare({ title, href, color }) {
   return (
     <Link href={href}>
@@ -48,3 +51,4 @@ function GridSquare({ title, href, color }) {
 // add text animations
 // possible images to square backgrounds or text takes up the whole square in a cool way
 // see deepseek potential issues to improve UI
+// add a cool cursor!
