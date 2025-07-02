@@ -23,7 +23,7 @@ export default function Login() {
       const result = await signIn("credentials", {
         password,
         redirect: false,
-        callbackUrl: "/blog",
+        callbackUrl: "/home",
       })
 
       if (result?.error) {
@@ -122,8 +122,6 @@ export default function Login() {
 /* 
 change the button styling to match the mailchimp styling
 workshop the text to be more clear and communicative for users
-make sure the button works on click and submit (enter key)
-add error message that says password is caseSensitive 
 add picture of coco
 show and hide to eye shut and eye open
 */

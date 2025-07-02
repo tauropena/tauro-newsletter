@@ -14,7 +14,7 @@ export const authOptions = {
         }
 
         if (credentials.password !== process.env.BLOG_PASSWORD) {
-          throw new Error("WRONG")
+          throw new Error("WRONG -- password is case sensitive")
         }
         return { id: "1", name: "welcome reader :-)" }
         // where does this message show up if at all?
@@ -32,9 +32,13 @@ export const authOptions = {
       session.user = token.user
       return session
     },
+    async redirect({ url, baseUrl }) {
+      return url.startsWith(baseUrl) ? `${baseUrl}/home` : url
+    },
   },
   pages: {
     signIn: "/login",
+    newUser: "/login",
     error: "/login",
   },
   secret: process.env.NEXTAUTH_SECRET,

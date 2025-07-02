@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #26211d;
+  --foreground: #dcd6c6;
+  --primary: #fcdc59;
+  --secondary: #ef738c;
 }
 
 @theme inline {
@@ -12,10 +14,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #dcd6c6;
+    --foreground: #26211d;
+    --primary: #fcdc59;
+    --secondary: #ef738c;
   }
 }
 
@@ -24,3 +28,5 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* eventually learn to create default colors for all components instead of entering hex codes */
