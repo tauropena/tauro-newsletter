@@ -60,9 +60,7 @@ export default function Login() {
             who is the prettiest girl in the whole wide world?
           </h1>
 
-          {error && (
-            <div className="mb-4 p-2 text-[#EF738C] rounded">{error}</div>
-          )}
+          {error && <div className="mb-4 p-2 text-secondary">{error}</div>}
 
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
@@ -78,7 +76,7 @@ export default function Login() {
                   id="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full text-white px-3 py-2 border border-[#FCDC59] bg-[#3A3631] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-white px-3 py-2 border border-primary bg-[#3A3631] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                   disabled={loading}
                 />
@@ -130,7 +128,7 @@ export default function Login() {
               </button>
             </div>
             <p className="text-sm text-gray-400 mt-16 text-center">
-              hold the down <span className="text-[#EF7386]">↓</span> arrow for
+              hold the down <span className="text-secondary">↓</span> arrow for
               a hint <br />
               <span className="text-gray-500"> (desktop only)</span>
             </p>

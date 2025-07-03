@@ -1,6 +1,6 @@
 ---
-title: my first blog post
-excerpt: this is an example blog post
+title: my first post
+excerpt: this is an example post
 date: "2023-07-20"
 ---
 

@@ -14,17 +14,17 @@ export default function HomePage() {
           <GridSquare
             title="amrita's lists"
             href="/blog/interactive/lists"
-            color="bg-background hover:bg-[#ef7386]"
+            color="bg-background hover:bg-secondary"
           />
           <GridSquare
             title="monthly highlights"
             href="/blog/standard/latest"
-            color="bg-background hover:bg-[#ef7386]"
+            color="bg-background hover:bg-secondary"
           />
           <GridSquare
             title="archives"
             href="/blog"
-            color="bg-background hover:bg-[#ef7386]"
+            color="bg-background hover:bg-secondary"
           />
         </div>
       </div>
