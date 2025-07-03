@@ -96,7 +96,7 @@ export default function Login() {
                 type="submit"
                 disabled={loading}
                 className={`w-auto px-6 bg-foreground text-background py-2 px-4 rounded-full border-2 border-background 
-                hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] transition" ${
+                hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] transition duration-300" ${
                   loading ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >
@@ -129,9 +129,10 @@ export default function Login() {
                 )}
               </button>
             </div>
-            <p className="text-sm text-gray-400 mt-4 text-center">
+            <p className="text-sm text-gray-400 mt-16 text-center">
               hold the down <span className="text-[#EF7386]">↓</span> arrow for
-              a hint
+              a hint <br />
+              <span className="text-gray-500"> (desktop only)</span>
             </p>
           </form>
         </div>
@@ -141,6 +142,7 @@ export default function Login() {
 }
 
 /* 
-add picture of coco
+LATER
 show and hide to eye shut and eye open
+DEEPSEEK SAYS: add media queries for annimation, and a loading state as a fallback for slow connections
 */

@@ -40,7 +40,12 @@ function GridSquare({ title, href, color }) {
       <div
         className={`${color} min-h-[calc(100vh/3)] h-full md:h-full flex flex-col items-start justify-center border border-[#706A5D] transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:z-10 relative p-6 group`}
       >
-        <h2 className="text-2xl font-bold text-foreground group-hover:text-3xl group-hover:[text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] transition-all duration-300">
+        <h2
+          className="text-2xl font-bold text-foreground 
+                    group-hover:text-3xl 
+                    group-hover:[text-shadow:_0_0.25rem_0_#706A5D] 
+                    transition-all duration-300"
+        >
           {title}
         </h2>
       </div>
@@ -49,8 +54,7 @@ function GridSquare({ title, href, color }) {
 }
 
 // LATER
-// hover to discover? black text is hidden until hover
 // add text animations
 // possible images to square backgrounds or text takes up the whole square in a cool way
 // see deepseek potential issues to improve UI
-// add a cool cursor!
+// add a cool cursor?
