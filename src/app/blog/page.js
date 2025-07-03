@@ -3,7 +3,7 @@ import path from "path"
 import Link from "next/link"
 import AuthCheck from "@/components/AuthCheck"
 import "@/app/globals.css"
-import HomeButton from "@/components/HomeButton" // Make sure this exists
+import HomeButton from "@/components/HomeButton"
 
 export default function BlogIndex() {
   const postsDirectory = path.join(process.cwd(), "src/app/blog/posts/standard")

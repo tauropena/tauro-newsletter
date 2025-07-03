@@ -18,7 +18,7 @@ export default function HomePage() {
           />
           <GridSquare
             title="monthly highlights"
-            href="/blog/standard/latest"
+            href="/blog/highlights"
             color="bg-background hover:bg-secondary"
           />
           <GridSquare
