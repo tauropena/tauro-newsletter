@@ -1,6 +1,6 @@
 ---
-title: my first post
-excerpt: this is an example post
+title: monthly highlights 2024/2025
+excerpt: the past 18 months all the way up to now
 date: "2023-07-20"
 ---
 

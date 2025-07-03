@@ -24,8 +24,8 @@ export default function BlogIndex() {
 
       return {
         slug: filename.replace(".md", ""),
-        title: titleMatch ? titleMatch[1] : "Untitled Post",
-        excerpt: excerptMatch ? excerptMatch[1] : "",
+        title: titleMatch ? titleMatch[1] : "untitled post",
+        // excerpt: excerptMatch ? excerptMatch[1] : "",
       }
     })
 
@@ -70,12 +70,12 @@ export default function BlogIndex() {
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}`}
-                    className="block p-6 border border-gray-500 rounded-lg hover:bg-[#3A3631] transition"
+                    className="block p-6 border border-[#706A50] rounded-lg hover:bg-[#3A3631] transition"
                   >
                     <h2 className="text-2xl font-semibold mb-2 text-foreground">
                       {post.title}
                     </h2>
-                    <p className="text-gray-400">{post.excerpt}</p>
+                    {/* <p className="text-gray-400">{post.excerpt}</p> */}
                   </Link>
                 ))}
               </div>
@@ -119,7 +119,7 @@ export default function BlogIndex() {
           {/* Error Message */}
           <div className="flex-1 flex flex-col items-center">
             <div className="max-w-4xl w-full">
-              <h1 className="text-4xl font-bold mb-8">
+              <h1 className="text-4xl text-foreground font-bold mb-8">
                 all the newsletters ever
               </h1>
               <p className="text-secondary">
@@ -132,3 +132,20 @@ export default function BlogIndex() {
     )
   }
 }
+
+// This code is a Next.js page that displays a list of blog posts.
+// It uses the `fs` module to read markdown files from a specific directory,
+// The `AuthCheck` component ensures that the user is authenticated before accessing the blog.
+// The posts are displayed in a grid layout with titles and excerpts.
+// The `Link` component from Next.js is used to navigate to individual blog post pages.
+
+// DO THIS AFTER RELEASING THE APP! NOT IMPORTANT RIGHT NOW!
+
+// I WILL NEED TO WORK ON THE STYLING OF THIS PAGE, kind of match the home page
+// H1 should say "all the blog posts ever"
+// I want to essentially have a flexbox or whatever the next.js equivalent is
+// for now, the flexbox should be 1 row 2 cols. as I add more posts it should expand to 3 cols. after 3 cols, it should start a new row
+// each box should have a title and an image
+// each box should be clickable and take you to the post page
+// each box should have a hover effect that changes makes the background color and gives the box and title text a shadow (exactly like the home page)
+// each box should be square and take up as much of the screen as possible
