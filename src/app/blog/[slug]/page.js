@@ -39,8 +39,8 @@ export default async function PostPage({ params }) {
             </li>
           </ol>
         </nav>
-
-        <pre>{content}</pre>
+        <pre>{content}</pre>{" "}
+        {/* Temporary - replace with proper markdown rendering */}
       </div>
     )
   } catch (err) {
