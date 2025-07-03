@@ -13,7 +13,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+/* 
 @media (prefers-color-scheme: light) {
   :root {
     --background: #dcd6c6;
@@ -21,7 +21,7 @@
     --primary: #fcdc59;
     --secondary: #ef738c;
   }
-}
+} */
 
 body {
   background: var(--background);
