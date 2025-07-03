@@ -1,7 +1,9 @@
 "use client"
+
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import AuthCheck from "@/components/AuthCheck"
+import "@/app/globals.css"
 
 // HomePage is the main page of the application that displays a grid of links to different sections.
 export default function HomePage() {
@@ -12,17 +14,17 @@ export default function HomePage() {
           <GridSquare
             title="amrita's lists"
             href="/blog/interactive/lists"
-            color="bg-[#26211D] hover:bg-[#ef7386]"
+            color="bg-background hover:bg-[#ef7386]"
           />
           <GridSquare
             title="monthly highlights"
             href="/blog/standard/latest"
-            color="bg-[#26211D] hover:bg-[#ef7386]"
+            color="bg-background hover:bg-[#ef7386]"
           />
           <GridSquare
             title="archives"
             href="/blog"
-            color="bg-[#26211D] hover:bg-[#ef7386]"
+            color="bg-background hover:bg-[#ef7386]"
           />
         </div>
       </div>
@@ -38,7 +40,7 @@ function GridSquare({ title, href, color }) {
       <div
         className={`${color} min-h-[calc(100vh/3)] h-full md:h-full flex flex-col items-start justify-center border border-[#706A5D] transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:z-10 relative p-6 group`}
       >
-        <h2 className="text-2xl font-bold text-[#DCD6C6] group-hover:text-3xl group-hover:[text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] transition-all duration-300">
+        <h2 className="text-2xl font-bold text-foreground group-hover:text-3xl group-hover:[text-shadow:_0_2px_4px_rgba(0,0,0,0.5)] transition-all duration-300">
           {title}
         </h2>
       </div>

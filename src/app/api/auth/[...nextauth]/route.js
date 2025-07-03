@@ -15,7 +15,7 @@ export const authOptions = {
           }
 
           if (credentials.password !== process.env.BLOG_PASSWORD) {
-            throw new Error("-- password is case sensitive")
+            throw new Error(" -- password is case sensitive")
           }
 
           return {
