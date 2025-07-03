@@ -11,19 +11,19 @@ export const authOptions = {
       async authorize(credentials) {
         try {
           if (!credentials?.password) {
-            throw new Error("password is required.")
+            return null
           }
 
           if (credentials.password !== process.env.BLOG_PASSWORD) {
-            throw new Error("WRONG -- password is case sensitive")
+            throw new Error("-- password is case sensitive")
           }
+
           return {
             id: "1",
-            name: "welcome reader :-)",
-          } // where does this message show up if at all?
+            name: "welcome reader :-)", // where does this message show up if at all?
+          }
         } catch (error) {
-          console.error("authentication error:", error)
-          return null
+          throw new Error("WRONG" + error.message)
         }
       },
     }),
