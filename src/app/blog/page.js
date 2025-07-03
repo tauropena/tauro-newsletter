@@ -123,7 +123,7 @@ export default function BlogIndex() {
                 all the newsletters ever
               </h1>
               <p className="text-secondary">
-                error loading blog posts. please try again later.
+                error loading posts. please try again later.
               </p>
             </div>
           </div>

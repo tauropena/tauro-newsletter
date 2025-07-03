@@ -6,7 +6,7 @@ date: "2025-06-20"
 
 # Welcome to my first post!
 
-This is the content of my first blog post.
+This is the content of my first post.
 
 ## Subheading
 
