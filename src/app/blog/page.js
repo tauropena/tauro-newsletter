@@ -1,39 +1,56 @@
-import AuthCheck from "@/components/AuthCheck"
 import fs from "fs"
 import path from "path"
-import matter from "gray-matter"
 import Link from "next/link"
+import AuthCheck from "@/components/AuthCheck"
+import "@/app/globals.css"
 
-export default function Blog() {
-  const postsDirectory = path.join(process.cwd(), "src/app/blog/posts")
+export default function BlogIndex() {
+  // Path to your markdown posts
+  const postsDirectory = path.join(process.cwd(), "src/app/blog/posts/standard")
 
   try {
-    const fileNames = fs.readdirSync(postsDirectory)
+    // Read directory contents
+    const filenames = fs.readdirSync(postsDirectory)
 
-    const posts = fileNames.map((filename) => {
+    // Filter for markdown files only
+    const markdownFiles = filenames.filter(
+      (file) =>
+        file.endsWith(".md") &&
+        fs.statSync(path.join(postsDirectory, file)).isFile()
+    )
+
+    const posts = markdownFiles.map((filename) => {
       const filePath = path.join(postsDirectory, filename)
       const fileContents = fs.readFileSync(filePath, "utf8")
-      const { data } = matter(fileContents)
+
+      // Extract frontmatter
+      const titleMatch = fileContents.match(/^title:\s*(.*)$/m)
+      const excerptMatch = fileContents.match(/^excerpt:\s*(.*)$/m)
+
       return {
         slug: filename.replace(".md", ""),
-        title: data.title || "Untitled",
-        excerpt: data.excerpt || "",
+        title: titleMatch ? titleMatch[1] : "Untitled Post",
+        excerpt: excerptMatch ? excerptMatch[1] : "",
       }
     })
 
     return (
       <AuthCheck>
         <div className="max-w-4xl mx-auto py-12 px-4">
-          <h1 className="text-4xl font-bold mb-8">This is my H1</h1>
+          <h1 className="text-foreground text-4xl font-bold mb-8">
+            all the blog posts ever.
+          </h1>
           <div className="grid gap-8">
             {posts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block p-6 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
+                className="block p-6 border border-gray-500 rounded-lg hover:bg-[#3A3631] transition"
               >
-                <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
-                <p className="text-gray-600">{post.excerpt}</p>
+                <h2 className="text-2xl font-semibold mb-2 text-foreground">
+                  {post.title}
+                </h2>
+                <p className="text-gray-400">{post.excerpt}</p>
               </Link>
             ))}
           </div>
@@ -41,20 +58,27 @@ export default function Blog() {
       </AuthCheck>
     )
   } catch (error) {
-    console.error("Error reading blog posts:", error)
-    return <div>Error loading blog posts.</div>
+    console.error("Error loading blog posts:", error)
+    return (
+      <AuthCheck>
+        <div className="max-w-4xl mx-auto py-12 px-4">
+          <h1 className="text-4xl font-bold mb-8">all the blog posts ever</h1>
+          <p className="text-red-500">
+            error loading blog posts. please try again later.
+          </p>
+        </div>
+      </AuthCheck>
+    )
   }
 }
 
 // This code is a Next.js page that displays a list of blog posts.
 // It uses the `fs` module to read markdown files from a specific directory,
-// extracts metadata using `gray-matter`, and renders the posts as links.
 // The `AuthCheck` component ensures that the user is authenticated before accessing the blog.
 // The posts are displayed in a grid layout with titles and excerpts.
 // The `Link` component from Next.js is used to navigate to individual blog post pages.
-// The page is styled with Tailwind CSS classes for a clean and responsive design.
 
-// make sure you can't bypass the password by going to the blog page directly by typing in /blog
+// DO THIS AFTER RELEASING THE APP! NOT IMPORTANT RIGHT NOW!
 
 // I WILL NEED TO WORK ON THE STYLING OF THIS PAGE, kind of match the home page
 // H1 should say "all the blog posts ever"
