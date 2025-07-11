@@ -87,7 +87,7 @@ export default function InteractiveScene() {
         onClick={() => handleItemClick("dumbbell")}
       />
       <Quotes
-        className="absolute top-30 right-50 z-10 cursor-pointer
+        className="absolute top-30 right-50 z-11 cursor-pointer
              w-64 h-auto
              hover:scale-115 transition-transform transition duration-300"
         onClick={() => handleItemClick("quotes")}
