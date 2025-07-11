@@ -62,50 +62,50 @@ export default function InteractiveScene() {
   return (
     <div className="relative w-full max-w-[min(92vw,1100px)] mx-auto h-[60vh] min-h-[400px] max-h-[600px] px-4">
       {/* Container with aspect ratio */}
-      <div className="absolute bottom-[-12%] left-[0%] z-11 w-[clamp(150px,35vw,600px)]">
+      <div className="absolute bottom-[-14%] left-[-1%] z-11 w-[clamp(450px,35vw,550px)]">
         <Bunny
           className="w-full h-auto cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("bunny")}
           preserveAspectRatio="xMidYMid meet"
         />
       </div>
-      <div className="absolute top-[0%] left-[-10%] z-10 w-[clamp(130px,30vw,520px)]">
+      <div className="absolute top-[-2%] left-[-11%] z-10 w-[clamp(430px,30vw,520px)]">
         <Plant
           className="w-full h-auto -rotate-90 cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("plant")}
         />
       </div>
-      <div className="absolute bottom-[-5%] right-[20%] z-10 w-[clamp(140px,34vw,560px)]">
+      <div className="absolute bottom-[-7%] right-[18%] z-10 w-[clamp(440px,34vw,530px)]">
         <Headphones
           className="w-full h-auto cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("headphones")}
         />
       </div>
-      <div className="absolute bottom-[8%] right-[-5%] z-10 w-[clamp(135px,30vw,540px)]">
+      <div className="absolute bottom-[2%] right-[-10%] z-10 w-[clamp(435px,30vw,510px)]">
         <Dumbbell
           className="w-full h-auto -rotate-90 cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("dumbbell")}
         />
       </div>
-      <div className="absolute top-[0%] right-[-5%] transform -translate-x-1/2 z-11 w-[clamp(100px,16vw,400px)]">
+      <div className="absolute top-[0%] right-[-10%] transform -translate-x-1/2 z-11 w-[clamp(200px,16vw,280px)]">
         <Quotes
           className="w-full h-auto cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("quotes")}
         />
       </div>
-      <div className="absolute top-[22%] left-[15%] z-11 w-[clamp(120px,18vw,480px)]">
+      <div className="absolute top-[22%] left-[13%] z-11 w-[clamp(300px,18vw,380px)]">
         <Popcorn
           className="w-full h-auto cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("popcorn")}
         />
       </div>
-      <div className="absolute top-[-7%] left-[20%] z-10 w-[clamp(140px,28vw,560px)]">
+      <div className="absolute top-[-7%] left-[19%] z-10 w-[clamp(340px,28vw,460px)]">
         <Tomatoes
           className="w-full h-auto -rotate-7 cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("tomatoes")}
         />
       </div>
-      <div className="absolute top-[0%] right-[15%] z-10 w-[clamp(145px,30vw,580px)]">
+      <div className="absolute top-[0%] right-[12%] z-10 w-[clamp(445px,30vw,480px)]">
         <Airplane
           className="w-full h-auto cursor-pointer hover:scale-110 transition-transform duration-300"
           onClick={() => handleItemClick("airplane")}
@@ -143,7 +143,7 @@ export default function InteractiveScene() {
 //     <div className="flex flex-col items-center justify-center">
 //       <h2 className="text-4xl font-bold mb-4">amrita's lists</h2>
 //       <h1 className="text-2xl text-center">
-//         this feature is only available on desktop... <br></br> for now
+//         whoops! you need a wider screen to view this content... <br></br> for now
 //       </h1>
 //       {/* Your interactive content here */}
 //     </div>

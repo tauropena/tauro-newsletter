@@ -1,6 +1,7 @@
 import { readFile } from "fs/promises"
 import path from "path"
 import HomeButton from "@/components/HomeButton"
+import "@/app/globals.css"
 
 export default async function PostPage({ params }) {
   // Try to load as markdown first
