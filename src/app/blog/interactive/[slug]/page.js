@@ -1,4 +1,3 @@
-import Link from "next/link"
 import HomeButton from "@/components/HomeButton"
 
 export default function Page({ params }) {
@@ -54,11 +53,29 @@ export default function Page({ params }) {
           </li>
         </ol>
       </nav>
-
       {/* Interactive Component */}
-      <div className="border border-[#706A50] rounded-lg p-6 my-4 bg-background flex-1 flex flex-col items-center justify-center">
+      <div
+        className="border border-[#706A50] rounded-lg p-6 my-4 bg-background 
+      flex-1 flex flex-col items-center justify-center"
+      >
         <InteractiveComponent />
+      </div>
+      {/* Post Title */}
+      <div>
+        {/* <h1 className="text-4xl text-foreground font-bold">amrita's lists</h1> */}
+        <p className="text-foreground text-right italic p-4">
+          {" "}
+          last updated: july 11, 2025
+        </p>
       </div>
     </main>
   )
 }
+
+// in an ideal world
+
+// flex-1 flex flex-col items-center justify-center
+// I need this for when the div widthchanges to anything below 1024 px
+
+// w-full h-auto
+//  and I need this for the actual content to take up the full width of the parent container
