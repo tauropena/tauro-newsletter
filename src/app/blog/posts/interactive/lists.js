@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Bunny from "@/assets/svg/bunny.svg"
 import Plant from "@/assets/svg/plant.svg"
 import Headphones from "@/assets/svg/headphones.svg"
@@ -13,6 +13,22 @@ import "@/app/globals.css"
 
 export default function InteractiveScene() {
   const [activeItem, setActiveItem] = useState(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 1024)
+    }
+
+    // Check immediately on mount
+    checkScreenSize()
+
+    // Set up event listener for window resize
+    window.addEventListener("resize", checkScreenSize)
+
+    // Clean up event listener on unmount
+    return () => window.removeEventListener("resize", checkScreenSize)
+  }, [])
 
   // Content for each popup
   const itemContent = {
@@ -57,6 +73,20 @@ export default function InteractiveScene() {
 
   const handleClosePopup = () => {
     setActiveItem(null)
+  }
+
+  if (isMobile) {
+    return (
+      <div className="flex flex-col items-center justify-center p-4">
+        <h2 className=" text-center text-5xl font-bold mb-4">whoops!</h2>
+        <h2 className="text-2xl font-bold text-center mb-4">
+          you need a wider screen to view this content...
+        </h2>
+        <h1 className="text-xl italic text-center">
+          try viewing on a computer or turning your device sideways
+        </h1>
+      </div>
+    )
   }
 
   return (
@@ -137,19 +167,6 @@ export default function InteractiveScene() {
     </div>
   )
 }
-
-// export default function ListsPost() {
-//   return (
-//     <div className="flex flex-col items-center justify-center">
-//       <h2 className="text-4xl font-bold mb-4">amrita's lists</h2>
-//       <h1 className="text-2xl text-center">
-//         whoops! you need a wider screen to view this content... <br></br> for now
-//       </h1>
-//       {/* Your interactive content here */}
-//     </div>
-//   )
-// }
-// This is a placeholder for the interactive lists post.
 
 //don't just put the interactive lists at the bottom of interactive/[slug]/page.js
 //because this is a specific post that needs its own layout and styling

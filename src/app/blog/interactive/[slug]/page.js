@@ -56,7 +56,7 @@ export default function Page({ params }) {
       </nav>
       {/* Interactive Component */}
       <div
-        className="border border-[#706A50] rounded-lg p-6 my-4 bg-background shadow-[0_0.25rem_0_0_#706A50]
+        className=" border border-[#706A50] rounded-lg p-6 my-4
       flex-1 flex flex-col items-center justify-center"
       >
         <InteractiveComponent />
