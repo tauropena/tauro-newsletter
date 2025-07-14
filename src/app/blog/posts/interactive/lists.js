@@ -47,7 +47,7 @@ export default function InteractiveScene() {
     },
     dumbbell: {
       title: "Goals",
-      description: "for 2024 and 2025.",
+      description: "AKA Resolutions",
     },
     quotes: {
       title: "Quotes",
@@ -171,3 +171,17 @@ export default function InteractiveScene() {
 //don't just put the interactive lists at the bottom of interactive/[slug]/page.js
 //because this is a specific post that needs its own layout and styling
 //this structure allows me to drop in any interactive post without havvinf to make a whole new page
+
+// tooltip styling but it's clunky and I don't like how it looks
+
+// import Tippy from "@tippyjs/react"
+// import "tippy.js/dist/tippy.css"
+
+// <Tippy
+// className="!bg-foreground !text-background"
+// content="travel"
+// placement="top"
+// arrow={false}
+// offset={[-30, 0]}
+// >
+// </Tippy>

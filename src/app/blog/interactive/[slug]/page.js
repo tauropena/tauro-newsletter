@@ -64,7 +64,7 @@ export default function Page({ params }) {
       {/* Post Title */}
       <div>
         {/* <h1 className="text-4xl text-foreground font-bold">amrita's lists</h1> */}
-        <p className="text-foreground text-right italic p-4">
+        <p className="text-gray-400 text-right italic p-4">
           {" "}
           last updated: july 11, 2025
         </p>
