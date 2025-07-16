@@ -5,11 +5,12 @@ import "@/app/globals.css"
 
 export default async function PostPage({ params }) {
   // Try to load as markdown first
+  const { slug } = await params
   try {
     const filePath = path.join(
       process.cwd(),
       "src/app/blog/posts/standard",
-      `${params.slug}.md`
+      `${slug}.md`
     )
     const content = await readFile(filePath, "utf8")
     // Render your markdown here...
@@ -34,7 +35,7 @@ export default async function PostPage({ params }) {
                   ></path>
                 </svg>
                 <span className="ml-1 text-foreground md:ml-2">
-                  {params.slug.replace("-", " ")}
+                  {slug.replace("-", " ")}
                 </span>
               </div>
             </li>
@@ -77,7 +78,7 @@ export default async function PostPage({ params }) {
         <div className="flex flex-col items-center justify-center flex-1">
           <h1 className="text-4xl text-secondary mb-4">error:</h1>
           <p className="text-lg text-foreground">
-            the post "{params.slug}" could not be found or loaded.
+            the post "{slug}" could not be found or loaded.
           </p>
         </div>
       </div>

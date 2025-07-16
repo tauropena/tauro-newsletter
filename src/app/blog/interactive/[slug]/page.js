@@ -1,13 +1,14 @@
 import HomeButton from "@/components/HomeButton"
 import "@/app/globals.css"
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
   // 1. Dynamically load the correct interactive post
+  const { slug } = await params
   const getInteractivePost = () => {
     try {
       // this require path works, but I am not sure why and if it's the best way to do this
       // also unsure how the .default export works here
-      return require(`../../posts/interactive/${params.slug}.js`).default
+      return require(`../../posts/interactive/${slug}.js`).default
     } catch (error) {
       console.error("Failed to load post:", error)
       return null
@@ -48,7 +49,7 @@ export default function Page({ params }) {
                 ></path>
               </svg>
               <span className="ml-1 text-foreground md:ml-2">
-                {params.slug.replace("-", " ")}
+                {slug.replace("-", " ")}
               </span>
             </div>
           </li>
