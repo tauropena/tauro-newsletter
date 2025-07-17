@@ -9,7 +9,7 @@ import matter from "gray-matter"
 import "@/app/globals.css"
 
 export default async function PostPage({ params }) {
-  const { slug } = params
+  const { slug } = await params
 
   try {
     const filePath = path.join(
