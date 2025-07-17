@@ -139,6 +139,9 @@ export default function BlogIndex() {
 // The posts are displayed in a grid layout with titles and excerpts.
 // The `Link` component from Next.js is used to navigate to individual blog post pages.
 
+// QUICK FIXES
+// add the date to each post's box.
+
 // DO THIS AFTER RELEASING THE APP! NOT IMPORTANT RIGHT NOW!
 
 // I WILL NEED TO WORK ON THE STYLING OF THIS PAGE, kind of match the home page

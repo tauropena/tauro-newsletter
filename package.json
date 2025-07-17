@@ -16,7 +16,10 @@
     "next": "15.3.4",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "remark-slug": "^7.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
