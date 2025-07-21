@@ -94,8 +94,8 @@ export default function Login() {
                 type="submit"
                 disabled={loading}
                 className={`w-auto px-6 bg-foreground text-background py-2 px-4 rounded-full border-2 border-background 
-                hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] transition duration-300" ${
-                  loading ? "opacity-70 cursor-pointer" : ""
+                hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] cursor-pointer transition duration-300" ${
+                  loading ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >
                 {loading ? (
