@@ -95,7 +95,7 @@ export default function Login() {
                 disabled={loading}
                 className={`w-auto px-6 bg-foreground text-background py-2 px-4 rounded-full border-2 border-background 
                 hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] transition duration-300" ${
-                  loading ? "opacity-70 cursor-not-allowed" : ""
+                  loading ? "opacity-70 cursor-pointer" : ""
                 }`}
               >
                 {loading ? (
@@ -142,5 +142,5 @@ export default function Login() {
 /* 
 LATER
 show and hide to eye shut and eye open
-DEEPSEEK SAYS: add media queries for annimation, and a loading state as a fallback for slow connections
+DEEPSEEK SAYS: add media queries for animation, and a loading state as a fallback for slow connections
 */

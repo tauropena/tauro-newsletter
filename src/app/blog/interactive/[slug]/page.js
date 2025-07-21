@@ -62,8 +62,8 @@ export default async function Page({ params }) {
       </div>
       {/* Interactive Component */}
       <div
-        className=" border border-[#706A50]/60 rounded-lg p-6 my-4
-      flex-1 flex flex-col items-center justify-center shadow-[_0_2px_4px_#000000]"
+        className=" border-2 border-[#706A50]/60 rounded-lg p-6 my-4
+      flex-1 flex flex-col items-center justify-center shadow-[_0_3px_4px_#000000]"
       >
         <InteractiveComponent />
       </div>

@@ -7,7 +7,7 @@ export default function HomeButton() {
     <li className="inline-flex items-center">
       <Link
         href="/home"
-        className=" bg-secondary border border-background rounded-full px-3 py-1 z-12 inline-flex items-center text-background hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#CC6378] transition duration-300"
+        className=" bg-secondary border-2 border-background rounded-full px-3 py-1 z-12 inline-flex items-center text-background hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#CC6378] transition duration-300"
       >
         <svg
           className="w-4 h-4 mr-2"

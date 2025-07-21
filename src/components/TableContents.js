@@ -55,7 +55,7 @@ export default function TableOfContents({ content }) {
 
   return (
     <div className="fixed left-8 top-1/2 transform -translate-y-1/2 w-60 max-h-[70vh] hidden lg:block">
-      <div className="bg-background border border-[#706A5d]/60 rounded-lg p-4 shadow-[_0_2px_4px_#000000]">
+      <div className="bg-background border-2 border-[#706A5d]/60 rounded-lg p-4 shadow-[_0_3px_4px_#000000]">
         <h3 className="text-sm font-semibold mb-3 text-[#706A5d]">
           scroll to...
         </h3>

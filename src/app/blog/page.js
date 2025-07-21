@@ -70,8 +70,8 @@ export default function BlogIndex() {
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}`}
-                    className="bg-background border border-[#706A5d]/60 rounded-lg p-4 shadow-[_0_2px_4px_#000000] 
-                    hover:bg-secondary transition duration-300"
+                    className="bg-background border-2 border-[#706A5d]/60 rounded-lg p-4 shadow-[_0_3px_4px_#000000] 
+                    hover:bg-secondary transition-all duration-300"
                   >
                     <h2
                       className="text-2xl font-semibold mb-2 text-foreground 
