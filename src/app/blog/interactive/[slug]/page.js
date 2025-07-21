@@ -55,6 +55,11 @@ export default async function Page({ params }) {
           </li>
         </ol>
       </nav>
+      <div>
+        <h1 className="text-primary text-center italic">
+          this page is a work in progress; content will not load right now...
+        </h1>
+      </div>
       {/* Interactive Component */}
       <div
         className=" border border-[#706A50]/60 rounded-lg p-6 my-4
@@ -62,11 +67,10 @@ export default async function Page({ params }) {
       >
         <InteractiveComponent />
       </div>
-      {/* Post Title */}
+
       <div>
         {/* <h1 className="text-4xl text-foreground font-bold">amrita's lists</h1> */}
         <p className="text-gray-400 text-right italic p-4">
-          {" "}
           last updated: july 11, 2025
         </p>
       </div>
