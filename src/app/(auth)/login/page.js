@@ -30,7 +30,7 @@ export default function Login() {
     try {
       const result = await signIn("credentials", {
         password,
-        redirect: true,
+        redirect: false, // if true error message is not displayed
         callbackUrl: "/home",
       })
 

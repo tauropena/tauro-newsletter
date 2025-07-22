@@ -1,7 +1,9 @@
+"use client"
+
 import AuthProvider from "@/providers/SessionProvider"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import TabSessionHandler from "@/components/TabSessionHandler"
+import InactivityTracker from "@/components/InactivityTracker"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -14,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <AuthProvider>
           {children}
-          <TabSessionHandler />
+          <InactivityTracker />
         </AuthProvider>
       </body>
     </html>
