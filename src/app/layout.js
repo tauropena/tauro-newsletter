@@ -1,6 +1,7 @@
 import AuthProvider from "@/providers/SessionProvider"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import TabSessionHandler from "@/components/TabSessionHandler"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -11,7 +12,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="512x512" />
       </head>
       <body className={inter.className}>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          {children}
+          <TabSessionHandler />
+        </AuthProvider>
       </body>
     </html>
   )

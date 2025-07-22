@@ -30,7 +30,7 @@ export default function Login() {
     try {
       const result = await signIn("credentials", {
         password,
-        redirect: false,
+        redirect: true,
         callbackUrl: "/home",
       })
 
