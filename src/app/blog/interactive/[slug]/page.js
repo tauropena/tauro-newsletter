@@ -59,7 +59,8 @@ export default async function Page({ params }) {
         </nav>
         <div>
           <h1 className="text-primary text-center italic">
-            this page is a work in progress; content will not load right now...
+            work in progress; some content will not load. i’ll email you when
+            this page is ready!
           </h1>
         </div>
         {/* Interactive Component */}
@@ -73,7 +74,7 @@ export default async function Page({ params }) {
         <div>
           {/* <h1 className="text-4xl text-foreground font-bold">amrita's lists</h1> */}
           <p className="text-gray-400 text-right italic p-4">
-            last updated: july 11, 2025
+            last updated: july 21, 2025
           </p>
         </div>
       </main>
