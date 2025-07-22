@@ -10,17 +10,19 @@ export default async function Page({ params }) {
   // Get the last modified date of this file
   const filePath = path.join(
     process.cwd(),
-    "src/app/posts/interactive/[slug]/page.js"
+    "src/app/blog/interactive/[slug]/page.js"
   )
   let lastUpdated = "unknown date"
 
   try {
     const stats = await fs.stat(filePath)
-    lastUpdated = stats.mtime.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    })
+    lastUpdated = stats.mtime
+      .toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+      .toLowerCase()
   } catch (error) {
     console.error("Failed to get file stats:", error)
   }
