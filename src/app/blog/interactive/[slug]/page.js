@@ -1,14 +1,32 @@
 import HomeButton from "@/components/HomeButton"
 import AuthCheck from "@/components/AuthCheck"
 import "@/app/globals.css"
+import { promises as fs } from "fs"
+import path from "path"
 
 export default async function Page({ params }) {
-  // 1. Dynamically load the correct interactive post
   const { slug } = await params
+
+  // Get the last modified date of this file
+  const filePath = path.join(
+    process.cwd(),
+    "src/app/posts/interactive/[slug]/page.js"
+  )
+  let lastUpdated = "unknown date"
+
+  try {
+    const stats = await fs.stat(filePath)
+    lastUpdated = stats.mtime.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  } catch (error) {
+    console.error("Failed to get file stats:", error)
+  }
+
   const getInteractivePost = () => {
     try {
-      // this require path works, but I am not sure why and if it's the best way to do this
-      // also unsure how the .default export works here
       return require(`../../posts/interactive/${slug}.js`).default
     } catch (error) {
       console.error("Failed to load post:", error)
@@ -16,10 +34,8 @@ export default async function Page({ params }) {
     }
   }
 
-  // 2. Get the component for the current slug
   const InteractiveComponent = getInteractivePost()
 
-  // 3. Handle case where component doesn't exist
   if (!InteractiveComponent) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -28,7 +44,6 @@ export default async function Page({ params }) {
     )
   }
 
-  // 4. render the post with a consistent layout
   return (
     <AuthCheck>
       <main className="min-h-screen max-w-6xl mx-auto p-4 flex flex-col">
@@ -59,7 +74,7 @@ export default async function Page({ params }) {
         </nav>
         <div>
           <h1 className="text-primary text-center italic">
-            work in progress; some content will not load. i’ll email you when
+            work in progress; some content will not load. i'll email you when
             this page is ready!
           </h1>
         </div>
@@ -72,9 +87,8 @@ export default async function Page({ params }) {
         </div>
 
         <div>
-          {/* <h1 className="text-4xl text-foreground font-bold">amrita's lists</h1> */}
           <p className="text-gray-400 text-right italic p-4">
-            last updated: july 21, 2025
+            last updated: {lastUpdated}
           </p>
         </div>
       </main>
