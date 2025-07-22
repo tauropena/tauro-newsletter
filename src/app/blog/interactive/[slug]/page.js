@@ -12,7 +12,7 @@ export default async function Page({ params }) {
     process.cwd(),
     "src/app/blog/interactive/[slug]/page.js"
   )
-  let lastUpdated = "unknown date"
+  let lastUpdated = "july 21, 2025"
 
   try {
     const stats = await fs.stat(filePath)
