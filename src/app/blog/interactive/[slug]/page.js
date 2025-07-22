@@ -1,32 +1,42 @@
 import HomeButton from "@/components/HomeButton"
 import AuthCheck from "@/components/AuthCheck"
-import "@/app/globals.css"
-import { promises as fs } from "fs"
 import path from "path"
+import fs from "fs/promises"
+import "@/app/globals.css"
 
 export default async function Page({ params }) {
   const { slug } = await params
 
-  // Get the last modified date of this file
-  const filePath = path.join(
-    process.cwd(),
-    "src/app/blog/interactive/[slug]/page.js"
-  )
-  let lastUpdated = "july 21, 2025"
+  // 1. Load the last updated date from the JSON file
+  let lastUpdated = "unknown date"
+  let dateSource = "none"
 
   try {
-    const stats = await fs.stat(filePath)
-    lastUpdated = stats.mtime
-      .toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })
-      .toLowerCase()
+    // For production: Load from public folder
+    // For development: Use dynamic require
+    if (process.env.NODE_ENV === "production") {
+      const response = await fetch(`/blog-metadata.json`)
+      if (response.ok) {
+        const metadata = await response.json()
+        lastUpdated = metadata.lastUpdated
+        dateSource = "JSON (production)"
+      }
+    } else {
+      // Development fallback - use current date
+      lastUpdated = new Date()
+        .toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+        .toLowerCase()
+      dateSource = "fallback (development)"
+    }
   } catch (error) {
-    console.error("Failed to get file stats:", error)
+    console.error("Failed to load last updated date:", error)
   }
 
+  // 2. Dynamically load the correct interactive post
   const getInteractivePost = () => {
     try {
       return require(`../../posts/interactive/${slug}.js`).default
@@ -38,6 +48,7 @@ export default async function Page({ params }) {
 
   const InteractiveComponent = getInteractivePost()
 
+  // 3. Handle case where component doesn't exist
   if (!InteractiveComponent) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -46,6 +57,7 @@ export default async function Page({ params }) {
     )
   }
 
+  // 4. Render the post with a consistent layout
   return (
     <AuthCheck>
       <main className="min-h-screen max-w-6xl mx-auto p-4 flex flex-col">
@@ -91,6 +103,9 @@ export default async function Page({ params }) {
         <div>
           <p className="text-gray-400 text-right italic p-4">
             last updated: {lastUpdated}
+          </p>
+          <p className="text-gray-400 text-right italic p-4">
+            date source: {dateSource}
           </p>
         </div>
       </main>
