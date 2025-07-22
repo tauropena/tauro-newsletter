@@ -1,44 +1,14 @@
 import HomeButton from "@/components/HomeButton"
 import AuthCheck from "@/components/AuthCheck"
-import path from "path"
-import fs from "fs/promises"
 import "@/app/globals.css"
 
 export default async function Page({ params }) {
+  // 1. Dynamically load the correct interactive post
   const { slug } = await params
-
-  // 1. Load the last updated date from the JSON file
-  let lastUpdated = "unknown date"
-  let dateSource = "none"
-
-  try {
-    // For production: Load from public folder
-    // For development: Use dynamic require
-    if (process.env.NODE_ENV === "production") {
-      const response = await fetch(`/blog-metadata.json`)
-      if (response.ok) {
-        const metadata = await response.json()
-        lastUpdated = metadata.lastUpdated
-        dateSource = "JSON (production)"
-      }
-    } else {
-      // Development fallback - use current date
-      lastUpdated = new Date()
-        .toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })
-        .toLowerCase()
-      dateSource = "fallback (development)"
-    }
-  } catch (error) {
-    console.error("Failed to load last updated date:", error)
-  }
-
-  // 2. Dynamically load the correct interactive post
   const getInteractivePost = () => {
     try {
+      // this require path works, but I am not sure why and if it's the best way to do this
+      // also unsure how the .default export works here
       return require(`../../posts/interactive/${slug}.js`).default
     } catch (error) {
       console.error("Failed to load post:", error)
@@ -46,6 +16,7 @@ export default async function Page({ params }) {
     }
   }
 
+  // 2. Get the component for the current slug
   const InteractiveComponent = getInteractivePost()
 
   // 3. Handle case where component doesn't exist
@@ -57,7 +28,7 @@ export default async function Page({ params }) {
     )
   }
 
-  // 4. Render the post with a consistent layout
+  // 4. render the post with a consistent layout
   return (
     <AuthCheck>
       <main className="min-h-screen max-w-6xl mx-auto p-4 flex flex-col">
@@ -88,7 +59,7 @@ export default async function Page({ params }) {
         </nav>
         <div>
           <h1 className="text-primary text-center italic">
-            work in progress; some content will not load. i'll email you when
+            work in progress; some content will not load. i’ll email you when
             this page is ready!
           </h1>
         </div>
@@ -101,11 +72,9 @@ export default async function Page({ params }) {
         </div>
 
         <div>
+          {/* <h1 className="text-4xl text-foreground font-bold">amrita's lists</h1> */}
           <p className="text-gray-400 text-right italic p-4">
-            last updated: {lastUpdated}
-          </p>
-          <p className="text-gray-400 text-right italic p-4">
-            date source: {dateSource}
+            last updated: july 21, 2025
           </p>
         </div>
       </main>
