@@ -59,8 +59,8 @@ export default async function Page({ params }) {
         </nav>
         <div>
           <h1 className="text-primary text-center italic">
-            work in progress; some content will not load. i’ll email you when
-            this page is ready!
+            this page is a work in progress; this is a preview of the content.
+            i’ll email you when it's complete!
           </h1>
         </div>
         {/* Interactive Component */}
