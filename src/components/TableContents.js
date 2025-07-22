@@ -60,7 +60,7 @@ export default function TableOfContents({ content }) {
           scroll to...
         </h3>
         <ul className="space-y-2">
-          {headings.slice(1).map((heading, index) => (
+          {headings.map((heading, index) => (
             <li key={`${heading.id}-${index}`}>
               <button
                 onClick={() => scrollToHeading(heading.id)}

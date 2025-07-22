@@ -85,7 +85,12 @@ export default async function PostPage({ params }) {
 
             {/* Rendered markdown (without frontmatter) */}
             <article
-              className="prose prose-headings:text-foreground prose-p:text-gray-400 max-w-3xl mx-auto py-8"
+              className="max-w-3xl mx-auto py-8
+              prose prose-headings:text-foreground 
+              prose-p:text-gray-400 
+              prose-strong:text-primary 
+              prose-blockquote:text-xl
+              prose-a:text-white"
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
           </div>
