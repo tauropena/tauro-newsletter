@@ -4,7 +4,7 @@ import AuthProvider from "@/providers/SessionProvider"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import InactivityTracker from "@/components/InactivityTracker"
-import MailchimpScript from "@/components/MailchimpScript"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -13,7 +13,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="512x512" />
-        <MailchimpScript />
+        <Script
+          id="mailchimp"
+          src="https://chimpstatic.com/mcjs-connected/js/users/f194f459e5195f688bebd9c64/0d11c910d3ec9fb2ac0a5b153.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={inter.className}>
         <AuthProvider>
