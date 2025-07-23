@@ -1,12 +1,12 @@
 ---
 title: monthly highlights 2024/2025
 excerpt: the past 18 months all the way up to now
-date: "2025-07-22"
+date: "07-23-2025"
 ---
 
-![](/images/header.png)
+<!-- ![](/images/header.png) -->
 
-# monthly highlights 2024
+## 2024
 
 The very **first week of 2024** I attended the RAY fellowship retreat in New Orleans. The fellowship places underrepresented professionals in jobs all over the U.S. Therefore, I’d never met most of the fellows. I went into the trip very anxious about spending a whole week with a bunch of randoms, only to come out of the trip with new perspectives, inspiration, and appreciation for the ways people support each other without realizing.
 
@@ -41,7 +41,7 @@ Mareko spent all of **September** with me; life felt like a movie. **October**, 
 ![](/images/2024grid.png)
 _The final square in the above grid is a pair of photos taken in the exact same spot, 7 years apart—a really satisfying testament to these friendships._
 
-# monthly highlights 2025
+## 2025
 
 Suddenly, it was 2025. I earned my software engineering certification. I traveled to South Africa, Spain, and Morocco and my friendship garden with Val prospered 😎. When I returned to the states, I first flailed and then learned to enjoy being unemployed, bringing me all the way up to the midway point of 2025, July 2nd.
 
@@ -90,5 +90,5 @@ Until next time,\
 Amrita\
 xoxo
 
-_citations:_
-_above quote: i don't remember the source_
+_citations:\
+above quote- i don't remember the source_

@@ -83,9 +83,19 @@ export default async function PostPage({ params }) {
               </ol>
             </nav>
 
-            {/* Rendered markdown (without frontmatter) */}
+            <img
+              className="max-w-3xl w-full h-auto mx-auto pt-8 pb-2"
+              src="/images/header.svg"
+            ></img>
+
+            <pre className="max-w-3xl mx-auto pb-16">
+              title: {frontmatter.title} <br></br>
+              description: {frontmatter.excerpt} <br></br>
+              date: {frontmatter.date}
+            </pre>
+
             <article
-              className="max-w-3xl mx-auto py-0
+              className="max-w-3xl mx-auto pb-8
               prose prose-headings:text-foreground 
               prose-p:text-gray-400 
               prose-strong:text-primary 
@@ -94,8 +104,7 @@ export default async function PostPage({ params }) {
               prose-em:text-white
               prose-img:mx-auto        
               prose-img:block
-              prose-img:w-full   
-              prose-img:h-auto 
+
              "
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
