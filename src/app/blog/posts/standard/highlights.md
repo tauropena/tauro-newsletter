@@ -27,7 +27,7 @@ My trip to New Zealand not only solidified mine and Stevie’s friendship into i
 ![](/images/leko.png)
 _From NZ to NYC ❤️_
 
-Mareko and I dated for just over a year, officially ending things on loving terms one month ago. Being with Mareko redefined my standards for what love can and should be. He made what I thought to be impossible in a relationship feel unquestionably natural. I now know that I really can find someone who communicates openly and listens with care. I now understand the exact ways in which love is not about obligation or ownership. From Mareko, I’ve learned how much love can simply be about intentionality.
+Mareko and I dated for just over a year, officially ending things on loving terms one month ago. Being with Mareko redefined my standards for what love can and should be. He made what I thought to be impossible in a relationship feel unquestionably natural. I now know that I can find someone who communicates openly and listens with care. I now understand the exact ways in which love is not about obligation or ownership. From Mareko, I’ve learned how much love can simply be about intentionality.
 
 I feel so terribly lucky to have met him.
 
@@ -51,7 +51,7 @@ July 2nd, I signed the contract for a new job.
 
 # big change ahead
 
-Tomorrow (7/23/25), I move back to Maryland for the first time in 7 years.
+Tomorrow (7/24/25), I move back to Maryland for the first time in 7 years.
 
 ## why?
 
@@ -66,7 +66,7 @@ My dad’s knees started to buckle on the way down from our hike, reminding me t
 ![](/images/pdxFam.png)
 _Sharing my favorite Pacific Northwest hikes with my dad and sister a couple months after the February epiphany. These pictures are from the Goat Marsh Research Natural Area, home to the elusive Goat Marsh Giant, a noble fir standing over 300 ft tall, and I would argue one of the coolest and most beautiful places in the world. I would happily die here._
 
-I’ll admit: I don’t know how long I’ll stay sane living with my parents. I’ll also admit that I haven’t really gotten my fill of living in New York; I’m very sad to be leaving. I’ll miss walking outside with the guarantee that I’ll see a dog wearing shoes. At the same time, I know that New York, Boston—﹘Every place I’ve lived and loved will always be a place, somewhere I can return to (I know I'll stay in touch with the people who matter); My parents, on the other hand, will always be mortal, and are, at the end of the day, my oldest friends (read as "likely the closest to death"). I rather try to live close with my parents and "fail" than not try at all.
+I’ll admit: I don’t know how long I’ll stay sane living with my parents. I’ll also admit that I haven’t really gotten my fill of living in New York; I’m very sad to be leaving. I’ll miss walking outside with the guarantee that I’ll see a dog wearing shoes. At the same time, I know that New York, Boston—﹘Every place I’ve lived and loved will always be a place, somewhere I can return to (I know I'll stay in touch with the people who matter); My parents, on the other hand, will always be mortal, and are, at the end of the day, my oldest friends (read as "likely the closest to death"). I rather try to live close to my parents and "fail" than not try at all.
 
 I’m also content to move home so that I can build a solid financial foundation. Since my first job at the age of 14, I’ve talked a lot about valuing financial stability and independence but have never taken necessary steps to achieve either (as my therapist would say, my values and ethics have not aligned). So, the ability to more quickly pay off my student loans in Maryland and live debt-free was another significant factor in my decision to move home.
 
@@ -90,4 +90,5 @@ Until next time,\
 Amrita\
 xoxo
 
-_quote: i don't remember the source_
+_citations:_
+_above quote: i don't remember the source_
