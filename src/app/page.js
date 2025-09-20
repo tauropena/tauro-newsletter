@@ -16,7 +16,7 @@ export default function Home() {
         className="cursor-pointer px-6 text-2xl bg-foreground text-background py-2 rounded-full border-2 border-background 
         hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] transition duration-300"
       >
-        click here
+        click now
       </button>
     </div>
   )
