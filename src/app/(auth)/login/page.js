@@ -57,7 +57,7 @@ export default function Login() {
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="p-8 rounded w-96">
           <h1 className="text-2xl text-foreground font-bold mb-6 text-left">
-            who is the prettiest girl in the whole wide world?
+            {/* who is the prettiest girl in the whole wide world? */}
           </h1>
 
           {error && <div className="mb-4 p-2 text-secondary">{error}</div>}
@@ -127,11 +127,6 @@ export default function Login() {
                 )}
               </button>
             </div>
-            <p className="text-sm text-gray-400 mt-16 text-center">
-              hold the down <span className="text-secondary">↓</span> arrow for
-              a hint <br />
-              <span className="text-gray-500"> (desktop only)</span>
-            </p>
           </form>
         </div>
       </div>

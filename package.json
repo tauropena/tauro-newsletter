@@ -12,6 +12,7 @@
     "@splinetool/react-spline": "^4.0.0",
     "@tippyjs/react": "^4.2.6",
     "framer-motion": "^12.23.3",
+    "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "15.3.4",
     "next-auth": "^4.24.11",
