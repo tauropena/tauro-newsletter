@@ -4,7 +4,6 @@
 import { useState, useEffect } from "react"
 import { signIn } from "next-auth/react"
 import { useRouter } from "next/navigation"
-import Spline from "@splinetool/react-spline"
 import "@/app/globals.css"
 
 // Login component
@@ -48,10 +47,7 @@ export default function Login() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Spline Background */}
-      <div className="fixed inset-0 z-0">
-        <Spline scene="https://prod.spline.design/5KhjSI3FSkdt1pdy/scene.splinecode" />
-      </div>
+     
 
       {/* Login Form */}
       <div className="relative z-10 flex items-center justify-center h-full">
@@ -66,7 +62,7 @@ export default function Login() {
             <div className="mb-4">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-400 mb-1"
+                className="block text-sm font-medium text-foreground mb-1"
               >
                 password
               </label>
@@ -76,14 +72,14 @@ export default function Login() {
                   id="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full text-white px-3 py-2 border border-primary bg-[#3A3631] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-white px-3 py-2 bg-foreground rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                   disabled={loading}
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-3 flex items-center text-gray-500"
+                  className="absolute inset-y-0 right-3 flex items-center text-gray-400"
                 >
                   {showPassword ? "hide" : "show"}
                 </button>
@@ -93,8 +89,8 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-auto px-6 bg-foreground text-background py-2 px-4 rounded-full border-2 border-background 
-                hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#C8C2B2] cursor-pointer transition duration-300" ${
+                className={`w-auto px-6 bg-foreground text-background py-2 px-4 rounded-full 
+                hover:translate-y-[-0.25rem] hover:shadow-[0_0.25rem_0_0_#F7FCF6] cursor-pointer transition duration-300" ${
                   loading ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >

@@ -85,7 +85,7 @@ export default async function PostPage({ params }) {
 
             <img
               className="max-w-3xl w-full h-auto mx-auto pt-8 pb-2"
-              src="/images/header.svg"
+              // src="/images/header.svg"
             ></img>
 
             <pre className="max-w-3xl mx-auto pb-16">
@@ -93,11 +93,12 @@ export default async function PostPage({ params }) {
               description: {frontmatter.excerpt} <br></br>
               date: {frontmatter.date}
             </pre>
+            {/* ^this is the code that renders the title description and date at the top of every blog post */}
 
             <article
               className="max-w-3xl mx-auto pb-8
               prose prose-headings:text-foreground 
-              prose-p:text-gray-400 
+              prose-p:text-foreground
               prose-strong:text-primary 
               prose-blockquote:text-xl
               prose-a:text-secondary
@@ -106,6 +107,7 @@ export default async function PostPage({ params }) {
               prose-img:block
 
              "
+            //  ^this code is to change color of text
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
           </div>

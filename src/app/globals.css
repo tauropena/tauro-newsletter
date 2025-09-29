@@ -2,10 +2,10 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #26211d;
-  --foreground: #dcd6c6;
-  --primary: #fcdc59;
-  --secondary: #ef738c;
+  --background: #85A87D;
+  --foreground: #2F481B;
+  --primary: #1B2F18;
+  --secondary: #D2E7D0;
 }
 
 @theme inline {
