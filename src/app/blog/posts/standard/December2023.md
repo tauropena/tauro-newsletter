@@ -18,7 +18,7 @@ _and I don’t want to download Instagram!_
 <!-- Insert picture of mom, helen, and rachelle eating together outside -->
 
 Anyways. I hope you enjoyed some of my thinking process going into this. Here is a brief list of important plot points in my character arc from graduation until now. 
-
+<!-- how do I change the font for lists? -->
 - started my job as a researcher at the Lehoczky Lab in Boston (studying mammalian limb regeneration) 
 - successfully overcame a big bad heartbreak
 - finally admitted to myself that I don’t like lab research! My first job helped me recognize that I don’t want a career or a PhD in lab research, despite a very kind/supportive boss and healthy lab environment. 
@@ -33,6 +33,8 @@ Anyways. I hope you enjoyed some of my thinking process going into this. Here is
 - am waiting to hear from the Fulbright 
 - hoping to move in with my mom if the Fulbright doesn’t work out to save some money and figure out a different career!
 
-Well! That’s all for now. Stay tuned for exciting updates that I feel are coming up in the new year. Besitos ( ˘⌣˘)♡(˘⌣˘ )
+Well! That’s all for now. Stay tuned for exciting updates that I feel are coming up in the new year. 
+
+## Besitos ( ˘⌣˘)♡(˘⌣˘ )
 
 <!-- Insert cute picture of me with my perm in front of helen's castle -->

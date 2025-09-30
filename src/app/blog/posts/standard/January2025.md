@@ -43,4 +43,4 @@ It’s why I’ve become such a good fighter.
 
 Oh! And one last thing. **I’ve started going by the name Tauro (t-OW-roh).** It’s the spanish word for Taurus hehe. I’ll try to send another soapbox sooner so the update isn’t so long!!
 
-Besitos ( ˘⌣˘)♡(˘⌣˘ )
+## Besitos ( ˘⌣˘)♡(˘⌣˘ )
