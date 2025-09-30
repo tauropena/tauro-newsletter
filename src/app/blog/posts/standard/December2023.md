@@ -10,6 +10,7 @@ Thank you for being here! I was inspired to start this newsletter by my mother a
 
 Over a decade would pass before they saw each other again but Helen always sent my mom a brief email at the end of the year. Despite the distance, time, and lack of texts or calls, an email once a year was enough to maintain their friendship for over 2 decades.  We were able to visit Helen this past summer in France and I could go on for hours about what an incredible host she was. I’ve never been interested in visiting Europe but it felt more like visiting an old friend. Here she is with my mother in front of Helen’s family castle in the French country side.
 
+
 <!-- insert picture of mom and helen in front of castle -->
 
 During this visit I couldn’t help but fantasize about having my own castle just so I could host my friends and their loved ones. I wouldn’t ever want them to hesitate in asking if they could come stay with me. I would be such a good host! The reality is, **even if I haven’t heard your voice in years or seen you in a decade, I will still care for you because I remember what you were like when we met. I still remember what it was like to be younger with you and I still have a lot of love for you even if its in the back of my mind.** I don’t want to let time or distance rob us of our bond. I figured if an email every once in a while was enough for Helen and Teresa, it can be enough for us. 
