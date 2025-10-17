@@ -41,8 +41,8 @@ export default function BlogIndex() {
               //src="/images/embassy.png"
             ></img>
             <div className="max-w-4xl w-full">
-              <h1 className="text-foreground text-4xl font-bold mb-2 mb-4">
-                all the newsletters ever.
+              <h1 className="text-foreground text-4xl font-bold mb-2 mb-4 text-center"> 
+                . ݁₊ ⊹ . ݁ ⟡ ݁ all my newsletters ever ⟡ ݁ . ⊹ ₊ ݁. 
               </h1>
               <div className="grid gap-8 pb-8">
                 {posts.map((post) => (
