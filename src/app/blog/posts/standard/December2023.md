@@ -18,6 +18,7 @@ During this visit I couldn’t help but fantasize about having my own castle jus
 
 _and I don’t want to download Instagram!_
 <!-- Insert picture of mom, helen, and rachelle eating together outside -->
+![](/images/dinnerwhelen.png)
 
 Anyways. I hope you enjoyed some of my thinking process going into this. Here is a brief list of important plot points in my character arc from graduation until now. 
 <!-- how do I change the font for lists? -->
@@ -40,3 +41,4 @@ Well! That’s all for now. Stay tuned for exciting updates that I feel are comi
 ## Besitos ( ˘⌣˘)♡(˘⌣˘ )
 
 <!-- Insert cute picture of me with my perm in front of helen's castle -->
+![](/images/permcastle.jpeg)
