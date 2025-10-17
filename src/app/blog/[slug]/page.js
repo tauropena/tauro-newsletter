@@ -105,7 +105,9 @@ export default async function PostPage({ params }) {
               prose-em:text-white
               prose-img:mx-auto        
               prose-img:block
-
+              prose-ul:text-foreground
+              prose-ol:text-foreground
+              prose-li:text-foreground
              "
             //  ^this code is to change color of text
               dangerouslySetInnerHTML={{ __html: contentHtml }}
