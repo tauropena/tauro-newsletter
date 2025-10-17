@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="512x512" />
+        <link rel="icon" href="/icon.icov?=2" sizes="512x512" />
        
       </head>
       <body className={inter.className}>
