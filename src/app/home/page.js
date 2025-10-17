@@ -36,6 +36,10 @@ export default function BlogIndex() {
          
           {/* Main Content */}
           <div className="flex-1 flex flex-col items-center">
+            <img
+              className="max-w-3xl w-full h-auto mx-auto pt-8 pb-2"
+              //src="/images/embassy.png"
+            ></img>
             <div className="max-w-4xl w-full">
               <h1 className="text-foreground text-4xl font-bold mb-2 mb-4">
                 all the newsletters ever.

@@ -85,7 +85,7 @@ export default async function PostPage({ params }) {
 
             <img
               className="max-w-3xl w-full h-auto mx-auto pt-8 pb-2"
-              // src="/images/header.svg"
+              //src="/images/embassy.png"
             ></img>
 
             <pre className="max-w-3xl mx-auto pb-16">
