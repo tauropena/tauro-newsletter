@@ -102,12 +102,14 @@ export default async function PostPage({ params }) {
               prose-strong:text-primary 
               prose-blockquote:text-xl
               prose-a:text-secondary
-              prose-em:text-white
+              prose-em:text-foreground
               prose-img:mx-auto        
               prose-img:block
               prose-ul:text-foreground
               prose-ol:text-foreground
               prose-li:text-foreground
+              prose-ol:marker:text-secondary
+              prose-li:marker:text-secondary
              "
             //  ^this code is to change color of text
               dangerouslySetInnerHTML={{ __html: contentHtml }}

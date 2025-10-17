@@ -4,7 +4,7 @@ excerpt: Thank you for being here
 date: "2023-12-14"
 --- 
 # The Soapbox
-## a friendly newsletter from yours truly (¯ ³¯)♡
+## from yours truly (¯ ³¯)♡
 
 Thank you for being here! I was inspired to start this newsletter by my mother and her friend Helen who met 25 years ago in Tulsa, Oklahoma. They were two foreigners in middle america who spent their free time teaching each other how to cook meals from their respective home countries. Helen eventually moved back to her native city of Paris and my mom went on to raise me and my sister in North Carolina. 
 

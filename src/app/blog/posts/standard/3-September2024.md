@@ -4,7 +4,7 @@ excerpt: A sun continues to burn
 date: "2024-09-27"
 ---
 # The Soapbox
-## a friendly newsletter from yours truly (¯ ³¯)♡
+## from yours truly (¯ ³¯)♡
 
 Hello friends! It’s been about five months since I sent you a soapbox. We ran through spring, skipped through summer, and are now changing colors with the leaves. I last left you with news of my rejection from Fulbright and acceptance into the Party for Socialism and Liberation. Since then, I’ve moved through life with a determination to make it to Mexico City while sharpening my political development here in Boston with the PSL.
 
