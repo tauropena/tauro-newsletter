@@ -42,7 +42,7 @@ export default function BlogIndex() {
             ></img>
             <div className="max-w-4xl w-full">
               <h1 className="text-foreground text-4xl font-bold mb-2 mb-4 text-center"> 
-                . ݁₊ ⊹ . ݁ ⟡ ݁ all of Tauro's newsletters ⟡ ݁ . ⊹ ₊ ݁. 
+                 ᕕ(⌐■_■)ᕗ ‧‧ ♫♩ ◙◙ ♫♩‧ ‧ ~( ˘▾˘~) 
               </h1>
               <div className="grid gap-8 pb-8">
                 {posts.map((post) => (

@@ -1,5 +1,5 @@
 ---
-title: SUMMER REVELATIONS (09/2024)
+title: Summer Revelations (09/2024)
 excerpt: A sun continues to burn 
 date: "2024-09-27"
 ---

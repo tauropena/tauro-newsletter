@@ -1,5 +1,5 @@
 ---
-title: AN ANALYSIS ON THE PERIOD AHEAD (01/2025)
+title: An Analysis on the Period Ahead (01/2025)
 excerpt: “Un día vamos a volver a nuestras tierras en paz y crear un mundo nuevo sin imperialismo.” 
 date: "2025-01-25"
 ---
