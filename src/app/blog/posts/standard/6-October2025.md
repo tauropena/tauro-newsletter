@@ -1,5 +1,5 @@
 ---
-title: Let fall be fall (10/2025)
+title: Letting Fall be Fall (10/2025)
 excerpt: My life is slowing changing with the leaves
 date: "2025-10-20"
 ---
@@ -14,7 +14,7 @@ Now, A few of y’all think I’m in Mexico City but not quite! I’m writing to
 
 In the meantime I’ve really enjoyed living in my home state even if it feels very emotional being back. The fall wind reminds me of marching band competitions and the sky looks just like it did on my bike in fourth grade. The nostalgia makes my stomach hurt sometimes. I think my mom looks at me and feels the same way.  Is there a difference between nostalgia and grief? Someone ask therapist Chatgpt so it can tell us to kill ourselves. Kidding!
 
-Anyways. I’m learning a lot from my mom these days. We cook together and go to family therapy since she continues to struggle with my “transformation” (a word she likes to use. I like it too). It’s funny, I thought by inheriting her personality I understood her completely because, well, we are the same person. I guess when you think you already know someone it makes it hard to listen, really listen to what they are saying. And for the first time I’m really listening to my mom and realizing I’ve probably never understood her. Our honesty is bringing us so much closer and that’s literally the whole reason why I wanted to come back to NC. I’m grateful for a mom who wants to go to therapy with me even though it’s so damn hard. I’m grateful for a mom who is as flawed as she is loving.
+Anyways. I’m learning a lot from my mom these days. We cook together and go to family therapy since she continues to struggle with my “transformation” (a word she likes to use. I like it too). It’s funny, I thought by inheriting her personality I understood her completely because, well, we are the same person. I guess when you think you already know someone it makes it hard to listen, really listen to what they are saying.  For the first time I’m really listening to my mom and realizing I’ve never fully understood her. Our honesty is bringing us so much closer and that’s literally the whole reason why I wanted to come back to NC. I’m grateful for a mom who wants to go to therapy with me even though it’s uncomfortable. I’m grateful for a mom who is more loving than she is flawed.
 
 ![](/images/momandtau.jpg)
 
@@ -37,9 +37,11 @@ Beyond all the sappy stuff I was still able to have lots of fun this summer.
  - I spent 10 days in New Mexico visiting my big sister. She was recovering from a concussion due to a bicycle injury but we still managed to go camping and see the milky way. 
 - We both then traveled to Oaxaca city where the class consciousness was very high (graffiti deep cuts referencing the Paris commune..) and the food was very very good. Together with my grandpa and my aunt we all attended the [Gueleguetza](https://en.wikipedia.org/wiki/Guelaguetza) which receives a delegation of dancers from my grandfather’s hometown. 
 - Then we drove to my grandfather’s hometown in Oaxaca to attend a week long annual festival that celebrates Mixtec and Hispanic religion. 
-- Finally I went to Mexico City for 2 weeks and spent time with my aunt and cousin who I’m going to be living with. I was able to venture around the city on my own and get somewhat of a handle on the public transit system. 
+- Finally I went to Mexico City for 2 weeks and spent time with my aunt and cousin who I’m going to be living with. I was able to venture around the city on my own and get somewhat of a handle on the public transit system without the help of my family. 
 
-But coming back from all that travel felt like “ok now what.” Not having a job in this tough market has definitely led to some emotional lows and stress. I’m trying not to beat myself up for being unemployed. I hate feeling like such a bum! I’m feeling pretty lost these days career wise, but I think that’s normal for a 25 year old in this economy. What has been really helpful has been networking with older Wellesley alums, especially ones in Mexico City. They have been extremely sweet and encouraging which always gives me an extra push to keep going. 
+Coming back from all that travel felt like “ok now what.” Not having a job in this tough market has definitely led to some emotional lows and stress. I’m trying not to beat myself up for being unemployed. Sometimes I feel like a leach to those around me! I’m feeling pretty lost these days career wise but I think that’s normal for a 25 year old in this economy What has been really helpful has been networking with older Wellesley alums, especially ones in Mexico City. They have been extremely sweet and encouraging which always gives me an extra push to keep going. 
+
+_my sister’s film pictures from my grandpa’s hometown in Oaxaca this summer_
 ![](/images/diabloparade.jpg)
 ![](/images/virgindemuerte.jpg)
 ![](/images/feathers.jpg)
