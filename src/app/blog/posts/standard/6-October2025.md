@@ -1,7 +1,7 @@
 ---
-title:  (10/2025)
-excerpt: 
-date: "2025-10-05"
+title: Let fall be fall (10/2025)
+excerpt: My life is slowing changing with the leaves
+date: "2025-10-20"
 ---
 # The Soapbox
 ## from yours truly (¯ ³¯)♡
@@ -52,5 +52,4 @@ Besitos ( ˘⌣˘)♡(˘⌣˘ )
 
 _me when I realize i’m not being punished for making one decision instead of another_
 
-<!-- insert picture of me on a sunrise hike -->
 ![](/images/sunrisehike.jpeg)
