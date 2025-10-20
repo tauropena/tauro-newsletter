@@ -24,9 +24,9 @@ Extra thanks to everyone that stopped by my goodbye party and for all the goodby
 
 As most of you know my mom was born and raised in Mexico City. While she was there she attended a teacher’s college and met a woman named Lilian. Her and Lilian became really close friends who were always looking out for each other. One time they worked together at a pretentious summer camp for German-Mexicans where my mom famously folded a kid like a lawn chair, dunked his ass in a toilet and flushed it after he told her to “wipe me like my maids do or else”. I’m pretty sure my mom wanted to be fired but Lilian still tried defending her from their boss. After my mom moved to the States at 26 to be with my father, my mom and Lilian corresponded by letter for years until one day my mom stopped hearing from her. Finally after getting in contact with Lilian’s family my mother was informed that Lilian suffered a tremendous fall and went into a coma. When she woke up she no longer had any memories of who she was. My mom was told that trying to contact Lilian would just make Lilian sad for forgetting who my mom is and so my mom stopped reaching out. 
 
-Twenty years later my mom gets a call from Lilian. She tells my mom how hard it was reintegrating into society after forgetting everything but despite this she managed to hold onto a box of important things that she had created before she lost her memory. In that box were all the letters my mom had written to her. The last letter my mom sent was about me being born. Lilian told my mom “I can’t remember who you are, but I can tell you were very important to me and I would like to be your friend again.” 
+Twenty years later my mom gets a call from Lilian. She tells my mom how hard it was reintegrating into society after forgetting everything but despite this she managed to hold onto a box of important things that she had created before she lost her memory. In that box were all the letters my mom had written to her. The last letter my mom sent was about me being born. Lilian told my mom “I can’t remember who you are but I can tell you were very important to me. I was wondering if we could try being friends again.” 
 
-All that to say I cherish every letter/card/note written to me no matter how short it is. In fact, I keep them all in a fireproof bag under my bed! Even if I forget who I am I don’t want to forget our friendship and its importance in my life. I always want to be able to come back to it.
+All that to say I cherish every letter/card/note written to me no matter how short it is. In fact, I keep them all in a fireproof bag under my bed! Even if I forget who I am I don’t want to forget our friendship and its importance in my life. I always want to be able to come back to it. I hope you will let me even if it takes me 20 years to find myself again.
 
 _scenes from my boston goodbye party_
 ![](/images/bouncyhouse.jpeg)
@@ -48,6 +48,7 @@ _my sister’s film pictures from my grandpa’s hometown in Oaxaca this summer_
 ![](/images/feathers.jpg)
 ![](/images/diablobanda.jpg)
 ![](/images/titodiablo.JPG)
+_the last picture is from 3 years ago but it’s so good that I had to show it to y’all. It’s a picture of my grandfather and my big sister before she goes to dance in the town square of my grandfather’s hometown as part of the festival_
 
 **Regardless, I’ve decided to move to Mexico City on November 8th.** I still have decent savings since i’m not spending money at my mom’s house. Even though my aunt won’t be charging me to live with her, I want to help contribute to the house. With my family’s loving help, I know that I’ll figure something out! Plus I have an intense motivation to get myself settled so I can start hosting y’all when you come visit. The next soapbox you receive from me will be from Mexico >;)
 
