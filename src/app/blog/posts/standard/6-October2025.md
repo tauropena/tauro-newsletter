@@ -48,7 +48,7 @@ But coming back from all that travel felt like “ok now what.” Not having a j
 
 **Regardless, I’ve decided to move to Mexico City on November 8th.** I still have decent savings since i’m not spending money at my mom’s house. Even though my aunt won’t be charging me to live with her, I want to help contribute to the house. With my family’s loving help, I know that I’ll figure something out! Plus I have an intense motivation to get myself settled so I can start hosting y’all when you come visit. The next soapbox you receive from me will be from Mexico >;)
 
-Besitos ( ˘⌣˘)♡(˘⌣˘ )
+## Besitos ( ˘⌣˘)♡(˘⌣˘ )
 
 _me when I realize i’m not being punished for making one decision instead of another_
 
