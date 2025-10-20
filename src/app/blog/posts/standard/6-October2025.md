@@ -28,6 +28,7 @@ Twenty years later my mom gets a call from Lilian. She tells my mom how hard it 
 
 All that to say I cherish every letter/card/note written to me no matter how short it is. In fact, I keep them all in a fireproof bag under my bed! Even if I forget who I am I don’t want to forget our friendship and its importance in my life. I always want to be able to come back to it.
 
+_scenes from my boston goodbye party_
 ![](/images/bouncyhouse.jpeg)
 ![](/images/thumbsup.jpeg)
 ![](/images/taurobingo.jpeg)
